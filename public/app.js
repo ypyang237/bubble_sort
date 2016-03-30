@@ -1,7 +1,6 @@
-
-
-
 var myArr = [6,5,4,3,2,1];
+
+
 
 function bubbleFunc(arr) {
   var isSorted = false;
@@ -10,26 +9,26 @@ function bubbleFunc(arr) {
 while(!isSorted) {
 
 isSorted = true;
+// clearInterval(myInterval);
 
   for (i = 0; i < arr.length; i++) {
 
     if (arr[i] > arr[i+1]) {
       count++;
       swap(arr, i);
-      // console.log('now it is: ', arr);
           document.getElementById('space').innerHTML= '';
+          // setInterval(slow(), 1000);
           for(j = 0; j < arr.length; j++) {
           addElement();
         }
+
           console.log('arr sets: ', arr);
 
       isSorted = false;
-    }
+    }  // end of if(arr[i] > arr[i+1])
   }
 
-  }
-  // console.log(arr);
-  // console.log(count);
+  } //end of while loop
   return {
     count: count,
     arr : arr
@@ -52,9 +51,7 @@ isSorted = true;
 
     }
     var bubbleFunc = bubbleFunc(myArr);
-    console.log('what', bubbleFunc.arr.length);
-
-
+    // console.log('what', bubbleFunc.arr.length);
 
 
 
