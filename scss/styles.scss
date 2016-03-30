@@ -1,0 +1,13 @@
+$primary-color : blue;
+
+body {
+  display: flex;
+  flex-direction: column;
+
+
+  #aBar {
+    background-color: $primary-color;
+    height: 20px;
+    border: 5px solid red;
+  }
+}

@@ -52,7 +52,7 @@ isSorted = true;
   }
 
   }
-  console.log(count);
+  // console.log(count);
   return this;
 
   function swap(arr, i) {
@@ -63,4 +63,5 @@ isSorted = true;
 
 }
 
-module.exports = bubbleSort;
+var bubbleSort = bubbleSort();
+// module.exports = bubbleSort;
