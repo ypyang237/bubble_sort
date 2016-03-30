@@ -1,7 +1,7 @@
 
 
 
-var myArr = [2,5,7,1,6,8,3,4];
+var myArr = [6,5,4,3,2,1];
 
 function bubbleFunc(arr) {
   var isSorted = false;
@@ -17,8 +17,8 @@ isSorted = true;
       count++;
       swap(arr, i);
       // console.log('now it is: ', arr);
+          document.getElementById('space').innerHTML= '';
           for(j = 0; j < arr.length; j++) {
-
           addElement();
         }
           console.log('arr sets: ', arr);
@@ -46,12 +46,9 @@ isSorted = true;
 
 
     function addElement() {
-      var bar = document.createElement('div');
-      bar.id = 'aBar';
+      var bar = '<li style="width:'+ myArr[j] * 10 +'px" id="aBar"></li>';
 
-      bar.style.width = myArr[j] * 10  + "px";
-      document.body.appendChild(bar);
-
+      document.getElementById('space').innerHTML += bar;
 
     }
     var bubbleFunc = bubbleFunc(myArr);
